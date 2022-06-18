@@ -1,20 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/constans.dart';
-import 'package:flutter_svg/svg.dart';
-
-class Body extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    Size size = MediaQuery.of(context).size;
-    return SingleChildScrollView(
-      child: Column(
-        children: <Widget>[
-          HeaderWithSearchBox(size: size),
-        ],
-      ),
-    );
-  }
-}
+import 'package:flutter_svg/flutter_svg.dart';
 
 class HeaderWithSearchBox extends StatelessWidget {
   const HeaderWithSearchBox({
@@ -27,6 +13,7 @@ class HeaderWithSearchBox extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      margin: const EdgeInsets.only(bottom: kDefaultPadding * 2.5),
       height: size.height * 0.2,
       child: Stack(children: <Widget>[
         Container(
