@@ -1,16 +1,29 @@
-# flutter_application_1
+## 참고
 
-A new Flutter project.
+### Flutter v3 Migration
 
-## Getting Started
+Application theme
 
-This project is a starting point for a Flutter application.
+[ThemeData's accent properties have been deprecated | Flutter](https://docs.flutter.dev/release/breaking-changes/theme-data-accent-properties#application-theme)
 
-A few resources to get you started if this is your first Flutter project:
+```dart
+MaterialApp(
+  theme: ThemeData(accentColor: myColor),
+  // ...
+);
+```
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+```dart
+final ThemeData theme = ThemeData();
+MaterialApp(
+  theme: theme.copyWith(
+    colorScheme: theme.colorScheme.copyWith(secondary: myColor),
+  ),
+  //...
+)
+```
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 링크
+
+- [abuanwar072/Plant-App-Flutter-UI](https://github.com/abuanwar072/Plant-App-Flutter-UI)
+  - [Plant App - Flutter UI - Speed Code - YouTube](https://www.youtube.com/watch?v=LN668OAUrK4)
