@@ -1,3 +1,10 @@
+## CHANGELOG.md
+
+### 2022-06-18
+
+<img width="534" alt="스크린샷 2022-06-18 오후 10 46 40" src="https://user-images.githubusercontent.com/42893446/174441393-e6c46938-8a6f-4e31-a33d-12d0477f8dcb.png">
+
+
 ## 참고
 
 ### Flutter v3 Migration
