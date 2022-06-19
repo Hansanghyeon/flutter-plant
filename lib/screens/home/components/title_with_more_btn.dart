@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../constans.dart';
+import 'package:flutter_application_1/constans.dart';
 
 class TitleWithMoreBtn extends StatelessWidget {
   const TitleWithMoreBtn({
@@ -9,7 +9,7 @@ class TitleWithMoreBtn extends StatelessWidget {
     required this.press,
   }) : super(key: key);
   final String title;
-  final Function press;
+  final void Function() press;
 
   @override
   Widget build(BuildContext context) {
