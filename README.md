@@ -1,4 +1,4 @@
-## 참고
+## Study
 
 ### Flutter v3 Migration
 
@@ -23,10 +23,19 @@ MaterialApp(
 )
 ```
 
+### Container & SizedBox
+
+Container, SizedBox 위젯은 둘다 width, height를 가진다. `Container`는 width, hegiht를 넣지 않으면, 최대 크기로 확장해준다. (screen size), 반면 `SizeBox`는 width, height 둘중 하나라도 설정하지 않으면 child 크기게 알맞게 설정된다.
+
+SizedBox는 html의 inline-block, inline-flex와 비슷하다.
+
 ## 링크
 
 - [abuanwar072/Plant-App-Flutter-UI](https://github.com/abuanwar072/Plant-App-Flutter-UI)
   - [Plant App - Flutter UI - Speed Code - YouTube](https://www.youtube.com/watch?v=LN668OAUrK4)
+
+### 학습
+- [플러터(flutter) - Container와 SizedBox의 차이](https://memostack.tistory.com/188)
 
 ## CHANGELOG.md
 
