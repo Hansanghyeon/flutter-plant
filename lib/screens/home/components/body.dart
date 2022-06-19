@@ -19,7 +19,6 @@ class Body extends StatelessWidget {
             title: "Recommended",
             press: () {},
           ),
-          // it will cover 40% of our total width
           SingleChildScrollView(
             scrollDirection: Axis.horizontal,
             child: Row(
