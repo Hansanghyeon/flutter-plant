@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/constans.dart';
+import 'package:flutter_application_1/constants.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class HeaderWithSearchBox extends StatelessWidget {
@@ -71,7 +71,7 @@ class HeaderWithSearchBox extends StatelessWidget {
                           TextStyle(color: kPrimaryColor.withOpacity(0.5)),
                       enabledBorder: InputBorder.none,
                       focusedBorder: InputBorder.none,
-                      // surffix가 SVG에서 제대로 작동하지 않습니다.
+                      // suffix가 SVG에서 제대로 작동하지 않습니다.
                       // 그것이 우리가 행을 사용하는 이유입니다
                       // suffixIcon: SvgPicture.asset("assets/icons/search.svg"),
                     ),

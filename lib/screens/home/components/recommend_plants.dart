@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/constans.dart';
+import 'package:flutter_application_1/constants.dart';
 
 class RecommendsPlants extends StatelessWidget {
   const RecommendsPlants({
@@ -95,7 +95,7 @@ class RecommendPlantCard extends StatelessWidget {
                               style: Theme.of(context).textTheme.button,
                             ),
                             TextSpan(
-                              text: "$country".toUpperCase(),
+                              text: country.toUpperCase(),
                               style: TextStyle(
                                 color: kPrimaryColor.withOpacity(0.5),
                               ),
@@ -103,7 +103,7 @@ class RecommendPlantCard extends StatelessWidget {
                           ],
                         ),
                       ),
-                      Spacer(),
+                      const Spacer(),
                       Text(
                         '\$$price',
                         style: Theme.of(context).textTheme.button?.copyWith(

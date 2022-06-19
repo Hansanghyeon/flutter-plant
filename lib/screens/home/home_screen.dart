@@ -3,6 +3,8 @@ import 'package:flutter_application_1/screens/home/components/body.dart';
 import 'package:flutter_svg/svg.dart';
 
 class HomeScreen extends StatelessWidget {
+  const HomeScreen({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

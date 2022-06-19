@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:flutter_application_1/constans.dart';
+import 'package:flutter_application_1/constants.dart';
 
 class TitleWithMoreBtn extends StatelessWidget {
   const TitleWithMoreBtn({
@@ -18,20 +18,20 @@ class TitleWithMoreBtn extends StatelessWidget {
       child: Row(
         children: [
           TitleWitchCustomUnderline(text: title),
-          Spacer(),
+          const Spacer(),
           TextButton(
             onPressed: press,
-            child: Text("More"),
             style: ButtonStyle(
               foregroundColor: MaterialStateProperty.all<Color>(Colors.white),
               backgroundColor: MaterialStateProperty.all<Color>(kPrimaryColor),
               shape: MaterialStateProperty.all(
                 RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(20),
-                  side: BorderSide(color: kPrimaryColor),
+                  side: const BorderSide(color: kPrimaryColor),
                 ),
               ),
             ),
+            child: const Text("More"),
           )
           // FlatButton(
           //   shape: RoundedRectangleBorder(
